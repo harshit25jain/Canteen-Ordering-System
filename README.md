@@ -160,35 +160,35 @@ Canteen-Ordering-System/
 └── README.md
 
 
-## 🌐 **Application URLs**
+## 🌐 Application URLs
 
 | Service | URL | Description |
-|---------|-----|-------------|
-| **🏠 Main App** | http://localhost:3000 | React.js frontend |
-| **🔧 Backend API** | http://localhost:8080 | Spring Boot REST API |
-| **📚 API Docs** | http://localhost:8080/swagger-ui.html | Swagger documentation |
-| **🗄️ Database** | http://localhost:8080/h2-console | H2 Database console |
+|----------|-----|-------------|
+| **Main App** | [http://localhost:3000](http://localhost:3000) | React.js frontend |
+| **Backend API** | [http://localhost:8080](http://localhost:8080) | Spring Boot REST API |
+| **API Docs** | [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html) | Swagger documentation |
+| **Database** | [http://localhost:8080/h2-console](http://localhost:8080/h2-console) | H2 Database console |
 
 ---
 
-## 🎯 **Key Features**
+## 🎯 Key Features
 
-### **Backend:**
-- ✅ **RESTful APIs** with Spring Boot
-- ✅ **Real-time inventory** management with pessimistic locking
-- ✅ **Automated order cancellation** (15-minute timeout)
-- ✅ **Transaction-safe** stock management
-- ✅ **Swagger documentation** for API testing
-- ✅ **H2 in-memory database** for development
+### Backend
+- **RESTful APIs** built with Spring Boot  
+- **Real-time inventory** management with pessimistic locking  
+- **Automated order cancellation** (15-minute timeout)  
+- **Transaction-safe** stock management  
+- **Swagger documentation** for API testing  
+- **H2 in-memory database** for development  
 
-### **Frontend:**
-- ✅ **React.js** with modern hooks and functional components
-- ✅ **Responsive design** with TailwindCSS
-- ✅ **Real-time updates** (10-second polling)
-- ✅ **Shopping cart** with quantity management
-- ✅ **Order management** with countdown timers
-- ✅ **Admin dashboard** for system management
-- ✅ **Modern UI** with shadcn/ui components
+### Frontend
+- **React.js** with modern hooks and functional components  
+- **Responsive design** using TailwindCSS  
+- **Real-time updates** (10-second polling)  
+- **Shopping cart** with quantity management  
+- **Order management** with countdown timers  
+- **Admin dashboard** for system management  
+- **Modern UI** with shadcn/ui components  
 
 ---
 
