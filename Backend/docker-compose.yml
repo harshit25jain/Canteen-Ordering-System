@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  # MySQL Database
+  mysql:
+    image: mysql:8.0
+    container_name: canteen-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: canteen_ordering
+      MYSQL_USER: canteen_user
+      MYSQL_PASSWORD: canteen_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - canteen-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  # PostgreSQL Database (Alternative)
+  postgres:
+    image: postgres:13
+    container_name: canteen-postgres
+    environment:
+      POSTGRES_DB: canteen_ordering
+      POSTGRES_USER: canteen_user
+      POSTGRES_PASSWORD: canteen_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - canteen-network
+    profiles:
+      - postgres
+
+  # Spring Boot Application
+  app:
+    build: .
+    container_name: canteen-app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/canteen_ordering?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: canteen_user
+      SPRING_DATASOURCE_PASSWORD: canteen_password
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - canteen-network
+
+volumes:
+  mysql_data:
+  postgres_data:
+
+networks:
+  canteen-network:
+    driver: bridge
+
