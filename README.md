@@ -7,9 +7,11 @@
 
 ## 🚀 Demo
 
-![Canteen Demo UI](./253f6823-7e97-4416-80cf-387f210b4460.png)
-<img width="1920" height="873" alt="{5E0129D9-B2ED-4408-B626-288AA1005E77}" src="https://github.com/user-attachments/assets/f9696efd-eba7-428d-856f-eb5fa3162b45" />
+### 🖥️ Application Preview
 
+| ![Canteen Demo UI 1](./demo.png) | ![Canteen Demo UI 2](./demo2.png) |
+|:--------------------------------:|:---------------------------------:|
+| *Home Page View* | *Admin Dashboard View* |
 
 > **Home Page:** Real-time inventory system showing live stock count, order history, admin controls, and a curated menu for quick ordering.
 
@@ -19,23 +21,23 @@
 
 The **Canteen Ordering System** is a full-stack web application that simplifies the canteen experience for students, employees, and administrators.
 
-Users can:
-- Browse menu items, view availability, and place instant orders.
+### 👤 Users can:
+- Browse menu items, view availability, and place instant orders.  
 - Track live order status and view previous orders.
 
-Admins can:
+### 🛠️ Admins can:
 - Manage menu items (add/update/delete).  
 - Control stock quantity and availability.  
 - View all customer orders and auto-cancel stale ones.
 
-**Backend** ensures:
-- Transaction-safe inventory updates using *pessimistic locking*.  
+### ⚙️ Backend ensures:
+- Transaction-safe inventory updates using **pessimistic locking**.  
 - Scheduled background jobs for automatic order cleanup.  
 - RESTful API design for frontend consumption.
 
-**Frontend** ensures:
-- A sleek, responsive, real-time experience using React + TailwindCSS.  
-- Instant cart updates and persistent session data via Zustand.
+### 💻 Frontend ensures:
+- A sleek, responsive, real-time experience using **React + TailwindCSS**.  
+- Instant cart updates and persistent session data via **Zustand**.
 
 ---
 
@@ -66,10 +68,10 @@ Admins can:
 ## ⚡ Quick Start (3 Ways)
 
 ### **1. Simplest (Windows)**
-
 Just double-click:
 ```bash
 START.bat
+
 
 ### **2. Using Docker (Recommended)**
 
