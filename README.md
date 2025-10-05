@@ -65,7 +65,7 @@ The **Canteen Ordering System** is a full-stack web application that simplifies 
 
 ---
 
-## ⚡ Quick Start (3 Ways)
+## ⚡ Quick Start 
 
 ### **1. Simplest (Windows)**
 Just double-click:
