@@ -127,9 +127,10 @@ npm run dev
 
 ## 📁 Folder Structure
 
+```bash
 Canteen-Ordering-System/
 │
-├── backend/
+├── Backend/
 │   ├── src/
 │   │   ├── main/java/com/canteen/
 │   │   │   ├── controller/        # REST Controllers
@@ -143,12 +144,12 @@ Canteen-Ordering-System/
 │   ├── pom.xml
 │   └── Dockerfile
 │
-├── frontend/
+├── Frontend/
 │   ├── src/
-│   │   ├── components/            # Reusable UI components
-│   │   ├── pages/                 # Page-level React components
-│   │   ├── store/                 # Zustand store
-│   │   ├── api/                   # Axios service modules
+│   │   ├── components/            # Reusable UI Components
+│   │   ├── pages/                 # Page-level React Components
+│   │   ├── store/                 # Zustand Store
+│   │   ├── api/                   # Axios Service Modules
 │   │   └── App.jsx
 │   ├── public/
 │   ├── package.json
@@ -157,6 +158,7 @@ Canteen-Ordering-System/
 ├── docker-compose.yml
 ├── START.bat
 └── README.md
+
 
 ## 🌐 **Application URLs**
 
