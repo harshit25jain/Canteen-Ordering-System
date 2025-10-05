@@ -159,6 +159,7 @@ Canteen-Ordering-System/
 ├── START.bat
 └── README.md
 
+---
 
 ## 🌐 Application URLs
 
