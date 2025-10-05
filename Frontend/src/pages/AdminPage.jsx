@@ -13,8 +13,8 @@ import {
   Edit,
   Trash2
 } from 'lucide-react'
-import { menuService } from '../lib/services/menu-service'
-import { orderService } from '../lib/services/order-service'
+import { menuService } from '../../lib/services/menu-service'
+import { orderService } from '../../lib/services/order-service'
 
 import { toast } from 'sonner'
 
