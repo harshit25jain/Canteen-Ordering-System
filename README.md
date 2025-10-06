@@ -7,7 +7,7 @@
 
 ## 🚀 Demo
 
-### 🖥️ Application Preview -> Live Preview: [https://canteen-ordering.netlify.app/]
+### 🖥️ Frontend: [https://canteen-ordering.netlify.app/]
 
 | ![Canteen Demo UI 1](./demo.png) | ![Canteen Demo UI 2](./demo2.png) |
 |:--------------------------------:|:---------------------------------:|
